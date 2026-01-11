@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
-import Signin from "../pages/Signin";
+import Register from "../pages/Register";
 import AppsDetails from "../pages/AppsDetails";
 import ErrorPage from "../Error/error";
 
@@ -25,8 +25,8 @@ import ErrorPage from "../Error/error";
             Component:Login
         },
         {
-            path:"/signin",
-            Component:Signin
+            path:"/Register",
+            Component:Register
         },
         {
             path:"/appsdetails",

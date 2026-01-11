@@ -8,7 +8,7 @@ import GameCard from '../components/GameCard';
 const Home = () => {
     const {appsData}=useApps();
     const sortappsData=appsData.sort((a,b)=>b.ratings - a.ratings);
-    console.log(sortappsData);
+    // console.log(sortappsData);
     return (
         <div className=''>
        <Banner></Banner>

@@ -11,7 +11,7 @@ const Navbar = () => {
   <div className="navbar-center  lg:flex">
     <div className=" px-1">
       <Link  to="/" className='m-3'>Home</Link>
-        <Link  to="/signin" className='m-3'>SignIn</Link>
+        <Link  to="/Register" className='m-3'>Register</Link>
       <Link to="/appsdetails" className='m-3'>AppsDetails</Link>
       <Link  to="/login" className='m-3'>Login</Link>
     </div>
