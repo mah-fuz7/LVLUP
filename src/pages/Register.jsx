@@ -12,7 +12,7 @@ const Register = () => {
  }=useContext(AuthContext)
 
 //   handlegoogleSignin handeler
-const handlegoogleSignin=(event)=>{
+const handlegoogleSignin=()=>{
   
   // event.preventDefault();
 signinwithGoogleFunc()

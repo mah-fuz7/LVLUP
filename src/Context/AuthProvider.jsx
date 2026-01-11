@@ -1,4 +1,4 @@
-import { createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile } from "firebase/auth"
+import { createUserWithEmailAndPassword, GoogleAuthProvider, sendPasswordResetEmail, signInWithEmailAndPassword, signInWithPopup, updateProfile } from "firebase/auth"
 import { auth } from "../firebase/firebase.config"
 import { AuthContext } from "./AuthContext"
 
@@ -22,15 +22,23 @@ const updateProfileFunc=({photoURL,displayName })=>{
 const signinwithGoogleFunc=()=>{
     return signInWithPopup(auth,provider)
 }
-
-
+// login with Email and password
+const signInWithEmailAndPasswordFunc=(email,password)=>{
+    return signInWithEmailAndPassword(auth,email,password)
+}
+// reset password
+const resetPasswordFunc=(email)=>{
+    return sendPasswordResetEmail(auth,email)
+}
 
 
 // authInfo obj
 const authInfo={
 createuserwithEmailAndPasswordFunc,
 updateProfileFunc,
-signinwithGoogleFunc
+signinwithGoogleFunc,
+signInWithEmailAndPasswordFunc,
+resetPasswordFunc
 
 
 }
