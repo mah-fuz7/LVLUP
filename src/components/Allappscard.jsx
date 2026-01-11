@@ -1,11 +1,15 @@
 import React from 'react';
 import { Star, Download } from 'lucide-react';
+import { useNavigate } from 'react-router';
 
-const DetailGameCard = ({app}) => {
+const AllappsCard = ({app}) => {
+  const navigate=useNavigate();
     const {coverPhoto, title, category, developer, description, ratings, downloadLink} = app;
-    
+    const handleClick=()=>{
+    navigate('/gamedetails')
+    }
     return (
-        <div>
+        <div onClick={handleClick}>
             <div className="bg-gray-800 rounded-xl overflow-hidden shadow-2xl w-full max-w-sm sm:max-w-md md:max-w-lg transform transition-all hover:scale-105 hover:shadow-3xl">
         <div className="relative">
           <img 
@@ -56,4 +60,4 @@ const DetailGameCard = ({app}) => {
     );
 };
 
-export default DetailGameCard;
+export default AllappsCard;

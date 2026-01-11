@@ -14,7 +14,7 @@ const {ratings,coverPhoto,title}=app;
 
 
   return (
-    <Link to="/appsdetails">
+    <Link to="/Allapps">
       <div className="bg-gray-800 rounded-xl overflow-hidden shadow-2xl w-full max-w-sm sm:max-w-md md:max-w-lg transform transition-all hover:scale-105 hover:shadow-3xl">
         <div className="relative">
           <img 

@@ -24,7 +24,7 @@ Discover Amazing Games
           <p className="mb-8 text-xl text-gray-200 md:text-2xl">
 Explore top-rated indie and AAA games from developers around the world.          </p>
           <button className="rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white transition-all hover:bg-blue-700 hover:scale-105 active:scale-95">
-           <Link to="/appsdetails">Browse Games</Link>
+           <Link to="/Allapps">Browse Games</Link>
           </button>
         </div>
       </div>

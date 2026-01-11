@@ -3,8 +3,9 @@ import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
-import AppsDetails from "../pages/AppsDetails";
+import Allapps from "../pages/Allapps";
 import ErrorPage from "../Error/error";
+import GameDetails from "../components/GameDetails";
 
  const router = createBrowserRouter([
   {
@@ -29,8 +30,12 @@ import ErrorPage from "../Error/error";
             Component:Register
         },
         {
-            path:"/appsdetails",
-            Component:AppsDetails
+            path:"/Allapps",
+            Component:Allapps
+        },
+        {
+            path:"/gamedetails",
+            Component:GameDetails
         }
     ],
   },
