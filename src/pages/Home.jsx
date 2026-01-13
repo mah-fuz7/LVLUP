@@ -3,7 +3,8 @@ import Banner from '../components/Banner';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
 import useApps from '../hooks/useApps';
-import GameCard from '../components/GameCard';
+// import GameCard from '../components/GameCard';
+import AllappsCard from '../components/Allappscard';
 
 const Home = () => {
     const {appsData}=useApps();
@@ -16,7 +17,7 @@ const Home = () => {
 
        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4 my-5'>
        {
-        sortappsData.slice(0,4).map(app=> <GameCard key={app.id} app={app}></GameCard>) 
+        sortappsData.slice(0,4).map(app=> <AllappsCard key={app.id} app={app}></AllappsCard>) 
        }
        </div>
        <Newsletter ></Newsletter>

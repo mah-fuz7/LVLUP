@@ -34,7 +34,7 @@ import GameDetails from "../components/GameDetails";
             Component:Allapps
         },
         {
-            path:"/gamedetails",
+            path:"/gamedetails/:id",
             Component:GameDetails
         }
     ],

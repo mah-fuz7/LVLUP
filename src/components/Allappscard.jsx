@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router';
 
 const AllappsCard = ({app}) => {
   const navigate=useNavigate();
-    const {coverPhoto, title, category, developer, description, ratings, downloadLink} = app;
+    const {coverPhoto, title, category, developer, description, ratings, downloadLink,id} = app;
     const handleClick=()=>{
-    navigate('/gamedetails')
+    navigate(`/gamedetails/${id}`)
     }
     return (
         <div onClick={handleClick}>

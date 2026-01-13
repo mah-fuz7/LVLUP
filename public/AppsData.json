@@ -2,7 +2,7 @@
   {
     "id": "1",
     "title": "PlayerUnknown's Battlegrounds (PUBG)",
-    "coverPhoto": "https://i.ibb.co.com/xKyYpDYr/pubg-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/DHmTh96b/Pubg-Lite.jpg",
     "category": "FPS",
     "downloadLink": "https://www.pubgmobile.com/en-US/home.shtml",
     "description": "PUBG Mobile is a fast-paced battle royale game where players fight for survival, strategy, and victory on dynamic maps.",
@@ -12,7 +12,7 @@
   {
     "id": "2",
     "title": "Call of Duty: Mobile",
-    "coverPhoto": "https://i.ibb.co.com/B0mkS40/callofduty-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/zhjySLzY/cod.jpg",
     "category": "FPS",
     "downloadLink": "https://www.callofduty.com/mobile",
     "description": "Call of Duty Mobile delivers classic multiplayer modes, zombies, and battle royale with console-quality graphics.",
@@ -22,7 +22,7 @@
   {
     "id": "3",
     "title": "Free Fire",
-    "coverPhoto": "https://i.ibb.co.com/HT2NnC9g/freefire-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/v4RPV78B/freefire.jpg",
     "category": "Battle Royale",
     "downloadLink": "https://ff.garena.com/",
     "description": "Free Fire is a lightweight battle royale game designed for quick matches and smooth performance on mobile devices.",
@@ -32,7 +32,7 @@
   {
     "id": "4",
     "title": "Minecraft",
-    "coverPhoto": "https://i.ibb.co.com/XkJdcLCj/minecraft-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/5g8hJLXp/Minecraft-une-mise-jour-c-leste-en-pr-paration-chez-Mojang.jpg",
     "category": "Sandbox",
     "downloadLink": "https://i.ibb.co.com/XkJdcLCj/minecraft-1.jpg",
     "description": "Minecraft is a sandbox game that allows players to build, explore, and survive in a block-based open world.",
@@ -42,7 +42,7 @@
   {
     "id": "5",
     "title": "GTA V",
-    "coverPhoto": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+    "coverPhoto": "https://i.ibb.co.com/FkypjZZH/gta.jpg",
     "category": "Action",
     "downloadLink": "https://www.rockstargames.com/gta-v",
     "description": "GTA V offers an open-world action experience with immersive storytelling, missions, and online gameplay.",
@@ -52,7 +52,7 @@
   {
     "id": "6",
     "title": "Fortnite",
-    "coverPhoto": "https://i.ibb.co.com/SwrJvvZL/fortnight-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/0VRnR2VQ/fortnite.jpg",
     "category": "Battle Royale",
     "downloadLink": "https://www.fortnite.com/",
     "description": "Fortnite is a colorful battle royale game featuring building mechanics and frequent live events.",
@@ -62,7 +62,7 @@
   {
     "id": "7",
     "title": "Among Us",
-    "coverPhoto": "https://i.ibb.co.com/XkJnxTTr/amongus-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/JjyvQYpf/amoung-us-time-yall.jpg",
     "category": "Party",
     "downloadLink": "https://www.innersloth.com/games/among-us/",
     "description": "Among Us is a multiplayer social deduction game where players identify impostors among the crew.",
@@ -72,7 +72,7 @@
   {
     "id": "8",
     "title": "Clash of Clans",
-    "coverPhoto": "https://i.ibb.co.com/HTdNs2mz/clashofclans-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/2DVTrFB/Clash-of-Clans-logo-sky-Clash-of-Clans-Wallpapers-Clasher-us.jpg",
     "category": "Strategy",
     "downloadLink": "https://supercell.com/en/games/clashofclans/",
     "description": "Clash of Clans is a strategy game where players build villages, train armies, and battle other players.",
@@ -82,7 +82,7 @@
   {
     "id": "9",
     "title": "Valorant",
-    "coverPhoto": "https://i.ibb.co.com/QvtGhv7B/valorant-1.jpg",
+    "coverPhoto": "https://i.ibb.co.com/JRNnBDTq/valorant-pc-wallpaper.jpg",
     "category": "FPS",
     "downloadLink": "https://playvalorant.com/",
     "description": "Valorant is a tactical FPS game combining precise gunplay with unique character abilities.",
@@ -92,7 +92,7 @@
   {
     "id": "10",
     "title": "Apex Legends",
-    "coverPhoto": "https://i.ibb.co.com/YBqY3F9d/download.jpg",
+    "coverPhoto": "https://i.ibb.co.com/2YKwrHVf/apex.jpg",
     "category": "Battle Royale",
     "downloadLink": "https://www.ea.com/games/apex-legends",
     "description": "Apex Legends is a fast-paced hero-based battle royale game focused on teamwork and movement.",
