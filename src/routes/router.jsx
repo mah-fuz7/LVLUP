@@ -6,6 +6,7 @@ import Register from "../pages/Register";
 import Allapps from "../pages/Allapps";
 import ErrorPage from "../Error/error";
 import GameDetails from "../components/GameDetails";
+import ProfilePage from "../pages/ProfilePage";
 
  const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ import GameDetails from "../components/GameDetails";
         {
             path:"/gamedetails/:id",
             Component:GameDetails
+        },
+        {
+            path:"/userprofile",
+            Component:ProfilePage
         }
     ],
   },

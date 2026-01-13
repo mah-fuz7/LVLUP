@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
 
 const Navbar = () => {
-  const {user,setUser}=useContext(AuthContext)
+  const {user}=useContext(AuthContext)
   console.log(user?.photoURL)
 
     return (
@@ -22,7 +22,8 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     <div>
-      <img src={user?.photoURL} className='h-12 w-12 mr-3 rounded-full' alt="" />
+      <Link to={"/userprofile"}>      <img src={user?.photoURL} className='h-12 w-12 mr-3 rounded-full' alt="" />
+</Link>
     </div>
     <a className="btn bg-linear-to-t from-sky-500 to-indigo-500">Logout</a>
   </div>
