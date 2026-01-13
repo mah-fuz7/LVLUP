@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router';
+import { AuthContext } from '../Context/AuthContext';
 
 const Navbar = () => {
+  const {user,setUser}=useContext(AuthContext)
+  console.log(user?.photoURL)
+
     return (
       <div className="navbar bg-base-100 shadow-sm">
   <div className="navbar-start">
@@ -17,7 +21,10 @@ const Navbar = () => {
     </div>
   </div>
   <div className="navbar-end">
-    <a className="btn">User</a>
+    <div>
+      <img src={user?.photoURL} className='h-12 w-12 mr-3 rounded-full' alt="" />
+    </div>
+    <a className="btn bg-linear-to-t from-sky-500 to-indigo-500">Logout</a>
   </div>
 </div>
     );
