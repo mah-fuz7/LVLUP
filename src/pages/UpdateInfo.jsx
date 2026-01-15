@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../Context/AuthContext';
 // import { auth } from '../firebase/firebase.config';
 import { useNavigate } from 'react-router';
+import bgimg from '../assets/banner bg 2.jpg'
 
 const UpdateInfo = () => {
 const navigate=useNavigate()
@@ -15,7 +16,7 @@ console.log(displayName,photoURL)
 updateProfileFunc({displayName,photoURL})
 .then(()=>{
     // setUser(auth.currentUser)
-        navigate('/userprofile')
+        navigate('/home')
 
 })
 .catch(error=>{
@@ -25,10 +26,7 @@ console.log(error.message)
     return (
         <div
   className="hero min-h-screen"
-  style={{
-    backgroundImage:
-      "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-  }}
+  style={{ backgroundImage: `url('${bgimg}')` }}
 >
   <div className="hero-content text-neutral-content text-center">
     <div className="max-w-md">

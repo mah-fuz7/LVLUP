@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router";
-import bannerBg from "../assets/bannerBg.jpg";
+import bannerBg from "../assets/banner bg 2.jpg";
 import { useSpring, animated } from "react-spring"; // <-- import animated
 
 const Banner = () => {
