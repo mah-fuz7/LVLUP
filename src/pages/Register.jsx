@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { AuthContext } from '../Context/AuthContext';
 import { Link, useNavigate } from 'react-router';
+import { FaEye, FaEyeLowVision } from 'react-icons/fa6';
 
 const Register = () => {
   const navigate=useNavigate('')
+  const [showPassword,setShowPassword]=useState(false)
   const {
   createuserwithEmailAndPasswordFunc,
   updateProfileFunc,
@@ -11,6 +13,11 @@ const Register = () => {
  
 
  }=useContext(AuthContext)
+//  password
+const handleShowPassword =(e)=>{
+e.preventDefault()
+setShowPassword(!showPassword)
+}
 
 //   handlegoogleSignin handeler
 
@@ -87,7 +94,12 @@ updateProfileFunc({displayName,photoURL})
           <label className="label">Email</label>
           <input name='email' type="email" className="input" placeholder="Email" />
           <label className="label">Password</label>
-          <input name='Password' type="password" className="input" placeholder="Password" />
+
+
+<div className='relative'>
+            <input name='Password' type={showPassword?"text":"password"} className="input " placeholder="Password" />
+<button onClick={handleShowPassword} className='absolute top-4 right-6 '>{showPassword ?<FaEyeLowVision />:<FaEye/>}</button>  </div>         
+         
           <label className="label">Link</label>
           <input name='imgUrl' type="imgUrl" className="input" placeholder="imgUrl" />
           <button className="btn btn-neutral mt-4">Register </button>

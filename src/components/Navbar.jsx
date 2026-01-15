@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
 const Navbar = () => {
   const {user,signoutFunc}=useContext(AuthContext)
-  console.log(user?.photoURL)
+  // console.log(user?.photoURL)
 
     return (
       <div className="navbar bg-base-100 shadow-sm">
