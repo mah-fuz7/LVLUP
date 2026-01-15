@@ -23,9 +23,9 @@ const ProfilePage = () => {
               alt="Profile"
               className="w-32 h-32 rounded-full object-cover border-4 border-indigo-500 shadow-lg"
             />
-            <button className="absolute bottom-0 right-0 bg-indigo-500 text-white p-2 rounded-full shadow-lg hover:bg-indigo-600 transition">
+            {/* <button className="absolute bottom-0 right-0 bg-indigo-500 text-white p-2 rounded-full shadow-lg hover:bg-indigo-600 transition">
               <Camera size={20} />
-            </button>
+            </button> */}
           </div>
         </div>
 

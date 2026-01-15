@@ -37,16 +37,16 @@ const Navbar = () => {
     </div>
   </div>
 {
-
-}
-  <div className="navbar-end">
+user? <div className="navbar-end">
     <div>
       <Link to={"/userprofile"}>      <img src={user?.photoURL} className='h-12 w-12 mr-3 rounded-full' alt="" />
 </Link>
 <p>{user?.displayName}</p>
     </div>
     <a onClick={signoutFunc} className="btn bg-linear-to-t from-sky-500 to-indigo-500">Logout</a>
-  </div>
+  </div> :""
+}
+ 
 </div>
     );
 };

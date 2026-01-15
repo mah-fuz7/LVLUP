@@ -32,7 +32,16 @@ const email=event.target.email.value
 const Password=event.target.Password.value
 const displayName=event.target.name.value
 const photoURL=event.target.imgUrl.value
+
 // sign in functionality
+
+if(!/^(?=.*[a-z])(?=.*[A-Z]).{6,}$/
+.test(Password)){
+  alert("invalid email")
+  return;
+}else
+  
+
  createuserwithEmailAndPasswordFunc(email,Password)
  .then(result=>{
   console.log(result.user)
