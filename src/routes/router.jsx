@@ -7,6 +7,7 @@ import Allapps from "../pages/Allapps";
 import ErrorPage from "../Error/error";
 import GameDetails from "../components/GameDetails";
 import ProfilePage from "../pages/ProfilePage";
+import UpdateInfo from "../pages/UpdateInfo";
 
  const router = createBrowserRouter([
   {
@@ -41,9 +42,16 @@ import ProfilePage from "../pages/ProfilePage";
         {
             path:"/userprofile",
             Component:ProfilePage
+        },
+        {
+            path:"/updateinfo",
+            Component:UpdateInfo
         }
     ],
   },
+
+
+
 ]);
 export default router
 

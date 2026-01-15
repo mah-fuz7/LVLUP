@@ -17,6 +17,10 @@ const createuserwithEmailAndPasswordFunc=(email,password)=>{
 // updateProfile add img link and name
 const updateProfileFunc=({photoURL,displayName })=>{
     return updateProfile(auth.currentUser,{displayName,photoURL})
+    .then(()=>{
+        setUser({...auth.currentUser})
+    })
+    
 }
 
 // sign in with google popUp

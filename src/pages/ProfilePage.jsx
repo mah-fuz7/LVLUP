@@ -66,9 +66,9 @@ const ProfilePage = () => {
         </div>
 
         {/* Update Button */}
-        <button className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">
+        <Link to={"/updateinfo"}><button className="w-full bg-indigo-600 text-white py-3 rounded-lg font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">
           Update Information
-        </button>
+        </button></Link>
       </div>
     </div>
     );
