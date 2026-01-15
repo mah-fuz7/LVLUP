@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
-
 const Navbar = () => {
   const {user,signoutFunc}=useContext(AuthContext)
   console.log(user?.photoURL)
@@ -12,14 +11,34 @@ const Navbar = () => {
     
     <Link to="/" className="btn btn-ghost text-4xl font-bold font-poppins text-red-500">LvlUp🏎️</Link>
   </div>
+
+  
   <div className="navbar-center  lg:flex">
-    <div className=" px-1">
-      <Link  to="/" className='m-3'>Home</Link>
-        <Link  to="/Register" className='m-3'>Register</Link>
-      <Link to="/Allapps" className='m-3'>Allapps</Link>
-      <Link  to="/login" className='m-3'>Login</Link>
+
+    <div className=" px-1  ">
+
+     <NavLink to="/home" className={({isActive} )=>
+      isActive?"btn text-white  bg-blue-500 mr-3":"  mr-3"
+     }>Home</NavLink>
+      {
+        user?"":<NavLink to="/Register" className={({isActive})=>
+      isActive?"btn text-white  bg-blue-500 mr-3":"  mr-3"
+     }>Register</NavLink>
+      }
+        
+      <NavLink to="/Allapps" className={({isActive})=>
+      isActive?"btn text-white  bg-blue-500 mr-3":"  mr-3"
+     }>Allapps</NavLink>
+     {
+      user?'': <NavLink to="/login" className={({isActive})=>
+      isActive?"btn text-white  bg-blue-500 mr-3":"  mr-3 "
+     }>Login</NavLink>
+     }
     </div>
   </div>
+{
+
+}
   <div className="navbar-end">
     <div>
       <Link to={"/userprofile"}>      <img src={user?.photoURL} className='h-12 w-12 mr-3 rounded-full' alt="" />

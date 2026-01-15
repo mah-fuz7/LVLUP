@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../Context/AuthContext';
 
 const Login = () => {
     const emailRef=useState(null)
+    const navigate=useNavigate('')
 // auth-context
 const{signInWithEmailAndPasswordFunc,signinwithGoogleFunc,resetPasswordFunc }=useContext(AuthContext)
 
@@ -17,6 +18,7 @@ console.log(email,password)
     signInWithEmailAndPasswordFunc(email,password)
     .then(result=>{
         console.log(result.user)
+        navigate('/home')
     })
     .catch(error=>{
         console.log(error.message)
@@ -30,6 +32,8 @@ console.log(email,password)
      signinwithGoogleFunc()
     .then(result=>{
         console.log(result.user)
+                navigate('/home')
+
     })
     .catch(error=>{
         console.log(error.message)

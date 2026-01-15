@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../Context/AuthContext';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const Register = () => {
+  const navigate=useNavigate('')
   const {
   createuserwithEmailAndPasswordFunc,
   updateProfileFunc,
@@ -12,31 +13,21 @@ const Register = () => {
  }=useContext(AuthContext)
 
 //   handlegoogleSignin handeler
+
 const handlegoogleSignin=()=>{
   
-  // event.preventDefault();
 signinwithGoogleFunc()
 .then(result=>{
   console.log(result)
+  navigate('/home')
 })
 .catch(error=>{
   console.log(error.message)
 })
-
-
 }
-
-
-
-
-
-
-
 
 const handleRegister=(event)=>{
   event.preventDefault();
-
-
 const email=event.target.email.value
 const Password=event.target.Password.value
 const displayName=event.target.name.value
@@ -45,11 +36,13 @@ const photoURL=event.target.imgUrl.value
  createuserwithEmailAndPasswordFunc(email,Password)
  .then(result=>{
   console.log(result.user)
+  navigate('/home')
 
   //  update profile
 updateProfileFunc({displayName,photoURL})
 .then(()=>{
   console.log("profile Updated")
+  
 })
 .catch(error=>{
   console.log(error)
